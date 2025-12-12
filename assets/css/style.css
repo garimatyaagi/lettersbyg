@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Roboto+Slab:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Roboto+Slab:wght@400;700&family=Courier+Prime:wght@400;700&display=swap');
 
 /* Site-wide styles */
 :root {
@@ -17,11 +17,11 @@
 
 html {
     font-size: 16px;
-    line-height: 2;
+    line-height: 2.4;
 }
 
 body {
-    font-family: Menlo, 'Source Code Pro', SFMono-Regular, 'SF Mono', Consolas, 'Liberation Mono', monospace;
+    font-family: 'Courier Prime', 'Courier New', SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace;
     font-weight: 200;
     color: var(--main-color);
     background-color: var(--background);
@@ -133,13 +133,13 @@ h3 {
 
 /* Home page content */
 .home {
-    line-height: 1.8;
+    line-height: 2.16;
 }
 
 .home p,
 .home strong {
-    font-family: Menlo, 'Source Code Pro', SFMono-Regular, 'SF Mono', Consolas, 'Liberation Mono', monospace;
-    margin-bottom: 1rem;
+    font-family: 'Courier Prime', 'Courier New', SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace;
+    margin-bottom: 1.2rem;
     color: var(--main-color);
     text-align: justify;
 }
@@ -149,7 +149,7 @@ h3 {
 }
 
 .post-content {
-    line-height: 1.8;
+    line-height: 2.16;
     font-weight: 400;
 }
 
@@ -159,7 +159,7 @@ h3 {
 }
 
 .post-content p {
-    margin-bottom: 1rem;
+    margin-bottom: 1.2rem;
     text-align: justify;
 }
 
