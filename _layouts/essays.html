@@ -1,0 +1,22 @@
+---
+layout: default
+---
+<div class="essays-page">
+    <header class="essays-header">
+        <h1>Essays</h1>
+        <nav class="essays-nav">
+            <a class="back-link" href="{{ " /" | relative_url }}">About Me</a>
+        </nav>
+    </header>
+
+    {%- if site.posts.size > 0 -%}
+    <ul class="essays-list">
+        {%- for post in site.posts -%}
+        <li>
+            <a class="essay-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
+            <span class="essay-date">{{ post.date | date: "%B %Y" }}</span>
+        </li>
+        {%- endfor -%}
+    </ul>
+    {%- endif -%}
+</div>

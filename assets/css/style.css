@@ -19,7 +19,7 @@ html {
 }
 
 body {
-    font-family: Georgia, serif;
+    font-family: 'Source Code Pro', monospace;
     color: var(--main-color);
     background-color: var(--background);
 }
@@ -136,7 +136,7 @@ h3 {
 
 .home p,
 .home strong {
-    font-family: Georgia, serif;
+    font-family: 'Source Code Pro', monospace;
     margin-bottom: 1rem;
     color: var(--main-color);
 }
@@ -202,6 +202,72 @@ h3 {
     text-decoration: underline;
 }
 
+/* Essays page */
+.essays-page {
+    padding-top: 1rem;
+}
+
+.essays-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.essays-header h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+.back-link {
+    color: var(--accent-color);
+    text-decoration: none;
+    font-size: 0.95rem;
+}
+
+.back-link:hover {
+    text-decoration: underline;
+}
+
+.essays-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.essays-list li {
+    margin-bottom: 1.5rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid var(--border-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.essays-list li:last-child {
+    border-bottom: none;
+}
+
+.essay-link {
+    color: var(--accent-color);
+    text-decoration: none;
+    font-weight: 600;
+    flex: 1;
+}
+
+.essay-link:hover {
+    text-decoration: underline;
+}
+
+.essay-date {
+    color: var(--light-color);
+    font-size: 0.9rem;
+    margin-left: 1rem;
+    white-space: nowrap;
+}
+
 /* Responsive */
 @media (max-width: 600px) {
     .site-nav {
@@ -220,5 +286,15 @@ h3 {
 
     .post-title {
         font-size: 1.5rem;
+    }
+
+    .essays-list li {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .essay-date {
+        margin-left: 0;
+        margin-top: 0.5rem;
     }
 }
