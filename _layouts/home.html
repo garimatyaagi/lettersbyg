@@ -4,10 +4,11 @@ layout: default
 <div class="home">
     {{ content }}
 
-    {%- if site.posts.size > 0 -%}
-    <h2 class="post-list-heading">Essays</h2>
+    {%- assign favorite_posts = site.posts | where_exp: "post", "post.tags contains 'favorite'" -%}
+    {%- if favorite_posts.size > 0 -%}
+    <p>I like to write. If you don't know where to start, then start from here:</p>
     <ul class="post-list">
-        {%- for post in site.posts -%}
+        {%- for post in favorite_posts -%}
         <li>
             <span class="post-meta">{{ post.date | date: date_format }}</span>
             <h3>

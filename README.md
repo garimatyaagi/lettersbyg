@@ -115,6 +115,11 @@ Edit `about.md` to tell your story. This page is separate from blog posts and ap
 
 Edit `index.md` to customize what appears on your homepage.
 
+### Feature your favorite essays
+
+- Add `tags: [favorite]` to any post front matter to include it in the homepage favorites list.
+- The homepage shows only posts tagged `favorite` and prefixes them with the line: "I like to write. If you don't know where to start, then start from here:".
+
 ## GitHub Pages Setup
 
 ### Method 1: Using GitHub Pages UI (Recommended)
