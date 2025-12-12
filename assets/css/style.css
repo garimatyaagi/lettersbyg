@@ -178,29 +178,31 @@ h3 {
     font-size: 0.9rem;
 }
 
-.footer-col-wrapper {
-    margin-bottom: 1rem;
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
 }
 
-.footer-col {
-    margin-bottom: 1rem;
+.footer-left {
+    flex: 1;
 }
 
-.contact-list {
-    list-style: none;
+.footer-right {
+    flex: 1;
+    text-align: right;
 }
 
-.contact-list li {
-    margin-bottom: 0.5rem;
-}
-
-.social-links a {
+.footer-left a,
+.footer-right a {
     color: var(--accent-color);
     text-decoration: none;
-    margin-right: 1rem;
+    margin-left: 0.5rem;
 }
 
-.social-links a:hover {
+.footer-left a:hover,
+.footer-right a:hover {
     text-decoration: underline;
 }
 
