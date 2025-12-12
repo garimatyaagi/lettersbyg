@@ -1,80 +1,119 @@
-# Letters by G - Jekyll Blog
+# Letters by G - Blog Owner's Guide
 
-A Jekyll-powered blog ready to be hosted on GitHub Pages.
+Welcome to your Jekyll blog! This guide will help you write and customize your blog.
 
-## Project Structure
+---
 
-```
-├── _config.yml              # Jekyll configuration
-├── _includes/               # HTML components (header, footer)
-├── _layouts/                # Page templates
-├── _posts/                  # Blog post markdown files
-├── assets/
-│   ├── css/                 # Stylesheets
-│   ├── js/                  # JavaScript
-│   └── images/              # Images
-├── about.md                 # About page
-├── index.md                 # Home page
-├── Gemfile                  # Ruby dependencies
-└── .gitignore
-```
+## Writing Your First Post
 
-## Getting Started
+### Creating a New Blog Post
 
-### Prerequisites
+1. Navigate to the `_posts` folder
+2. Create a new file with the naming convention: `YYYY-MM-DD-your-post-title.md`
+   - Example: `2025-12-15-why-i-started-this-blog.md`
 
-- Ruby 2.7+ (Ruby 3.1 recommended)
-- Bundler
+### Blog Post Structure
 
-### Installation
+Every post starts with **front matter** (the section between `---` markers):
 
-1. Install Ruby from [ruby-lang.org](https://www.ruby-lang.org/en/downloads/)
-
-2. Install dependencies:
-```bash
-bundle install
-```
-
-3. Serve locally:
-```bash
-bundle exec jekyll serve
-```
-
-Then visit `http://localhost:4000` in your browser.
-
-## Adding Blog Posts
-
-Create a new file in `_posts/` with the naming convention: `YYYY-MM-DD-post-title.md`
-
-Example:
 ```markdown
 ---
 layout: post
 title: Your Post Title
-date: 2025-01-15
+date: 2025-12-15
 categories: [Category1, Category2]
-excerpt: "Brief description of your post"
+excerpt: "A brief summary that appears on the homepage"
 ---
 
-Your post content here...
+Your post content goes here...
 ```
 
-## Customization
+**Front Matter Explained:**
+- `layout: post` – Always use this for blog posts
+- `title` – Your post title (appears as heading and in listings)
+- `date` – Publication date in YYYY-MM-DD format
+- `categories` – Topics for your post (helps organize content)
+- `excerpt` – Brief summary (shows on homepage; write 1-2 sentences)
 
-### Update Site Config
+### Writing Your Content
+
+After the front matter, write your post using **Markdown**:
+
+```markdown
+## Main Section
+
+Write your content here. You can use paragraphs, **bold**, *italics*, `code`, and more.
+
+### Subsection
+
+- Bullet points
+- Work great
+- For lists
+
+[Links look like this](https://example.com)
+
+> Blockquotes are useful for emphasis or quotes
+```
+
+### Tips for Great Posts
+
+- **Start strong** – Your first paragraph should grab attention
+- **Use subheadings** – Break up longer posts with `##` and `###`
+- **Keep paragraphs short** – Easier to read on screen
+- **Use examples** – Concrete examples help readers understand
+- **Write naturally** – Your voice matters more than perfection
+
+---
+
+## Customizing Your Blog
+
+### Change Blog Title & Description
 
 Edit `_config.yml`:
-- `title`: Your site title
-- `description`: Site description
-- `author`: Your name
-- `email`: Your email
-- `url`: Your domain (e.g., https://lettersbyg.com)
-- `github_username`: For GitHub link in footer
-- `twitter_username`: For Twitter link in footer
 
-### Update Styling
+```yaml
+title: Letters by G
+description: Essays on startups, building, and learning
+author: Your Name
+email: your@email.com
+```
 
-Modify `assets/css/style.css` to customize colors and layout.
+### Add Social Links
+
+In `_config.yml`, add your social usernames:
+
+```yaml
+github_username: your-github-handle
+twitter_username: your-twitter-handle
+```
+
+These will appear as clickable links in your footer.
+
+### Customize Colors & Design
+
+Edit `assets/css/style.css` to change:
+
+- **Main color** – `--main-color: #333` (text color)
+- **Light color** – `--light-color: #666` (meta text)
+- **Accent color** – `--accent-color: #0066cc` (links, highlights)
+- **Background** – `--background: #fff` (page background)
+
+Example:
+```css
+:root {
+  --main-color: #1a1a1a;      /* Darker text */
+  --accent-color: #e74c3c;    /* Red links */
+  --background: #f9f9f9;      /* Light gray background */
+}
+```
+
+### Update Your About Page
+
+Edit `about.md` to tell your story. This page is separate from blog posts and appears in navigation.
+
+### Update Homepage
+
+Edit `index.md` to customize what appears on your homepage.
 
 ## GitHub Pages Setup
 
