@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/Hi.md",
+                "file": "_posts/2025-12-12-Hi.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Hi"
+              "title": "2025-12-12-Hi"
             }
           }
         ]
@@ -180,10 +180,10 @@
       "bases:Create new base": false
     }
   },
-  "active": "24ff88fc9bb6b6d7",
+  "active": "f71f762790bda576",
   "lastOpenFiles": [
     "README.md",
-    "_posts/Hi.md",
+    "_posts/2025-12-12-Hi.md",
     "drafts",
     "assets/Attachments"
   ]
