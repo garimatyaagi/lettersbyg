@@ -1,0 +1,37 @@
+# Jekyll configuration for Letters by G
+title: Letters by G
+description: Essays on technology, startups, and life
+author: Garima Tyagi
+email: garimatyagi268@gmail.com
+github_username: garimatyaagi
+twitter_username: gartyagi
+url: https://lettersbyg.com
+baseurl: ""
+
+# Build settings
+markdown: kramdown
+theme: minima
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+# Collections
+collections:
+  posts:
+    output: true
+    permalink: /:year/:month/:day/:slug/
+
+# Pagination
+paginate: 10
+paginate_path: "/page:num/"
+
+# Exclude files/directories
+exclude:
+  - node_modules
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - .gitignore

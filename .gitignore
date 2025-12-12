@@ -1,0 +1,23 @@
+# Jekyll
+_site/
+.jekyll-cache/
+.jekyll-metadata
+
+# Ruby
+.bundle/
+.byebug_history
+*.gem
+Gemfile.lock
+
+# IDE
+.vscode/
+.DS_Store
+*.swp
+*.swo
+*~
+
+# OS
+Thumbs.db
+
+# Dependencies
+node_modules/

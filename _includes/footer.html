@@ -1,0 +1,31 @@
+<footer class="site-footer">
+    <div class="wrapper">
+        <div class="footer-col-wrapper">
+            <div class="footer-col footer-col-1">
+                <ul class="contact-list">
+                    <li class="p-name">{{ site.title | escape }}</li>
+                    {%- if site.email -%}
+                    <li><a class="u-email" href="mailto:{{ site.email }}">{{ site.email }}</a></li>
+                    {%- endif -%}
+                </ul>
+            </div>
+
+            <div class="footer-col footer-col-2">
+                {%- if site.rss_feed -%}
+                <a href="{{ site.rss_feed }}">RSS Feed</a>
+                {%- else -%}
+                <a href="/feed.xml">RSS Feed</a>
+                {%- endif -%}
+            </div>
+        </div>
+
+        <div class="social-links">
+            {%- if site.github_username -%}
+            <a href="https://github.com/{{ site.github_username }}" target="_blank" rel="noopener">GitHub</a>
+            {%- endif -%}
+            {%- if site.twitter_username -%}
+            <a href="https://twitter.com/{{ site.twitter_username }}" target="_blank" rel="noopener">Twitter</a>
+            {%- endif -%}
+        </div>
+    </div>
+</footer>
