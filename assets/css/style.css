@@ -21,7 +21,7 @@ html {
 }
 
 body {
-    font-family: 'Source Code Pro', monospace;
+    font-family: "dm", ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     font-weight: 400;
     color: var(--main-color);
     background-color: var(--background);
@@ -35,7 +35,6 @@ body {
 
 /* Header */
 .site-header {
-    border-bottom: 1px solid var(--border-color);
     padding: 1.5rem 0;
     margin-bottom: 2rem;
 }
@@ -139,7 +138,7 @@ h3 {
 
 .home p,
 .home strong {
-    font-family: 'Source Code Pro', monospace;
+    font-family: "dm", ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     margin-bottom: 1rem;
     color: var(--main-color);
 }
@@ -173,7 +172,6 @@ h3 {
 
 /* Footer */
 .site-footer {
-    border-top: 1px solid var(--border-color);
     padding: 2rem 0;
     margin-top: 3rem;
     color: var(--light-color);
