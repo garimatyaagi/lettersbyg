@@ -48,10 +48,15 @@ I would say discipline. I've had cycles of sleeping at 4pm and waking up at 11pm
 ***What did this year teach me about myself?***
 
 - I am stronger than I thought I was and I am more capable than I thought I was
+  
 - I suck at multi tasking. If I am focusing on one thing, I lose focus of everything else. 
+  
 - Success>Impact>Money. Although all of them matters. Momentum drives more than anything else.
+  
 - I am happier with non linear trajectory and not knowing what's next (directionally knowing is ok but still leaving room to let life happen)
+  
 - I regret missed chances more than missed opportunities
+  
 - Career is a part of life. Goal in life is to maximise happiness. Career should also lead to maximising happiness
 
 —
